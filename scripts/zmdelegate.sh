@@ -14,7 +14,8 @@ read DOMAIN
 		zmprov ma ${USER} +zimbraAdminConsoleUIComponents rightListView
 		zmprov ma ${USER} +zimbraAdminConsoleUIComponents domainAdminRights
 
-#for DOMAIN in ${DOMAINS}; do
+#for DOMAIN in ${DOMAIN}
+#do
 #	echo ${DOMAIN}
 
 		# alias ACL
