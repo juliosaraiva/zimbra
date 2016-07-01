@@ -66,6 +66,7 @@ ChPasswd(){
 
 	if [ $? -ne 0 ]; then
 		echo "404 Not found!"
+        ChPasswd
 	else
 		echo "Enter the new password"
 		read -s CHPASSWD
