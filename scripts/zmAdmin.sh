@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Date: 01/07/2016
+# Date: 11/05/2017
 # Autor: Julio Saraiva - contato@juliosaraiva.com.br
 # Web: www.juliosaraiva.com.br
 #
@@ -10,7 +10,7 @@ clear
 
 Menu(){
 	echo "------------------------------------------"
-	echo "    			Zimbra Admin	 		    "
+	echo "    	Zimbra Admin	                "
 	echo "------------------------------------------"
 	echo
 	echo "[ 1 ] Create domain"
@@ -23,7 +23,7 @@ Menu(){
 	echo "[ 0 ] Sair"
 	echo
 
-	echo -n "Qual a opcao desejada ? "
+	echo -n "Qual a opcao desejada? "
 	read opcao
 
 	case $opcao in
@@ -66,7 +66,7 @@ AddDkim(){
 }
 
 QueryDkim(){
-        echo "Enter the domain name:"
+        echo "Enter the domain name: "
         read DOMINIO
 
         zmprov gd $DOMINIO  > /dev/null 2>&1
@@ -99,8 +99,6 @@ ChPasswd(){
 			echo "Unable to change the password! Try again!"
 		fi
 	fi
-
-return
 
 }
 
@@ -191,19 +189,10 @@ RemDelegate(){
 
 }
 
-MigraMail(){
-	/usr/local/sysnetpro/zmmigrate
+MigraMail()
+{
+echo "Em desenvolvimento"
 }
-
-#CriaBackup(){
-#	read -p "Informe o dominio que deseja realizar o backup: " DOMAIN
-#	zmprov gd "$DOMAIN" > /dev/null 2>&1
-#	if [ $? -ne 0 ]; then
-#		echo "Domínio não cadastrado!"
-#	else
-#
-#	fi
-#}
 
 sair(){
 
